@@ -1,12 +1,13 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  First_Jobber:
+  first_jobber:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Step 1"
       - run: echo "Step 2"
-  Second_Jobber:
+  second_jobber:
+    needs: first_jobber
     runs-on: ubuntu-latest
     steps:
       - name: Here comes the Hot Stepper
