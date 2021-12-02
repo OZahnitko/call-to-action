@@ -13,3 +13,10 @@ jobs:
       - name: Here comes the Hot Stepper
         run: |
           echo "lit"
+  turd_jobber:
+    needs: first_jobber
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gimme the loot
+        run: |-
+          echo "I'm a bastard!!!"
